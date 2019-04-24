@@ -1,0 +1,39 @@
+{
+  "name": "pouchdb-find",
+  "version": "7.0.0-prerelease",
+  "description": "Easy-to-use query language for PouchDB",
+  "main": "lib/index.js",
+  "keywords": [
+    "pouch",
+    "pouchdb",
+    "plugin",
+    "find",
+    "mango",
+    "query",
+    "couch",
+    "couchdb"
+  ],
+  "author": "Nolan Lawson <nolan@nolanlawson.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/pouchdb/pouchdb",
+  "jsnext:main": "./lib/index.es.js",
+  "browser": {
+    "./lib/index.js": "./lib/index-browser.js",
+    "./lib/index.es.js": "./lib/index-browser.es.js"
+  },
+  "dependencies": {
+    "pouchdb-abstract-mapreduce": "github:HitomiTenshi/pouchdb-abstract-mapreduce",
+    "pouchdb-collate": "github:HitomiTenshi/pouchdb-collate",
+    "pouchdb-errors": "github:HitomiTenshi/pouchdb-errors",
+    "pouchdb-fetch": "github:HitomiTenshi/pouchdb-fetch",
+    "pouchdb-md5": "github:HitomiTenshi/pouchdb-md5",
+    "pouchdb-selector-core": "github:HitomiTenshi/pouchdb-selector-core",
+    "pouchdb-utils": "github:HitomiTenshi/pouchdb-utils"
+  },
+  "module": "./lib/index.es.js",
+  "files": [
+    "lib",
+    "dist",
+    "tonic-example.js"
+  ]
+}
